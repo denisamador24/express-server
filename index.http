@@ -1,0 +1,70 @@
+# Programming
+POST http://localhost:3000/api/courses/programming HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 5,
+  "title": "Aprendiendo Node.js",
+  "language": "javascript",
+  "vistas": 67020,
+  "nivel": "basico"
+}
+
+###
+PUT http://localhost:3000/api/courses/programming/2 HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "Python intermedio con proyectos",
+  "language": "python",
+  "vistas": 1231,
+  "nivel": "intermedio"
+}
+
+###
+PATCH http://localhost:3000/api/courses/programming/2 HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Python intermedio con proyectos y mas",
+  "vistas": 18231
+}
+
+### 
+DELETE http://localhost:3000/api/courses/programming/3 HTTP/1.1
+
+
+###
+# Math
+POST http://localhost:3000/api/courses/math HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 15,
+  "title": "Aprendiendo Logaritmos",
+  "language": "algebra",
+  "vistas": 670,
+  "nivel": "intermedio"
+}
+
+
+###
+PUT http://localhost:3000/api/courses/math/15 HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 15,
+  "title": "Suma y resta de Algoritmos",
+  "language": "algebra",
+  "vistas": 124431,
+  "nivel": "intermedio"
+}
+
+###
+PATCH http://localhost:3000/api/courses/math/15 HTTP/1.1
+Content-Type: application/json
+
+{
+  "vistas": 124432
+}
