@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API with Express</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>API of courses with Express</h1>
+    <p>Try the API and see the code, it's a simple project</p>
+    <p>download from github <a href="https://github.com/denisamador24/express-server">express-srver</a></p>
+    <article>
+        git clone https://github.com/denisamador24/express-server.git
+    </article>
+  </header>
+  <main>
+    <section>
+      <h2>GET Method API</h2>
+      <ul>
+        <li><a href="/api/courses">Courses</a>
+        </li>
+        <li>
+          <a href="/api/courses/programming">Courses of programming</a>
+          <ul>
+            <li><a href="/api/courses/programming/python">Courses of python</a></li>
+            <li><a href="/api/courses/programming/javascript">Courses of JavaScript</a></li>
+          </ul>
+        </li>
+        <li><a href="/api/courses/math">
+            Courses of Math</a>
+          <ul>
+            <li><a href="/api/courses/math/algebra">Courses of algebra</a></li>
+            <li><a href="/api/courses/math/calculo">Courses of calculo</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Another GET Method API</h2>
+      <article>
+        <p>/api/courses/type/example/level</p>
+        <p>/api/courses/type/example?order=view</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>POST, PUT, PATCH and DELETE Method</h2>
+      <p>Execute http methods in the file "index.http with an extension in Visual Studio Code"</p>
+    </section>
+  </main>
+</body>
+
+</html>

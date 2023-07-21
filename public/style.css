@@ -1,0 +1,28 @@
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
+
+header article {
+  background-color: beige;
+  padding: 16px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 16px 0;
+}
+
+section {
+  margin: 68px;
+}

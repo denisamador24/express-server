@@ -5,6 +5,8 @@ const programmingRouter = require('./routes/programming.js')
 const PORT = process.env.PORT || 3000
 
 const app = express()
+app.use(express.static("public"));
+app.use("/static", express.static("public"));
 
 // Routers
 app.use('/api/courses/math', mathRouter)
@@ -12,7 +14,7 @@ app.use('/api/courses/programming', programmingRouter)
 
 // Routing
 app.get('/', (req, res) => {
-  res.send('Firt express project 💻')
+  res.sendFile(__dirname + '/index.html')
 })
 app.get('/api/courses', (req, res) => {
   res.json(courses)
@@ -20,5 +22,5 @@ app.get('/api/courses', (req, res) => {
 
 // Listen
 app.listen(PORT, () => {
-  console.log('Server is running in https://localhost:' + PORT);
+  console.log('Server is running in http://localhost:' + PORT);
 })
